@@ -26,8 +26,7 @@ easyHTTP.prototype.post = function( url, data, callback ) {
         callback(null, self.http.responseText);
     };
 
-
-    this.send(JSON.stringify(data));
+    this.http.send(JSON.stringify(data));
 };
 
 // PUT
