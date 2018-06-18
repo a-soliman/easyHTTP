@@ -38,7 +38,16 @@ const data = {
 //     }
 // });
 
-http.put('https://jsonplaceholder.typicode.com/posts/1', data, ( err, response ) => {
+// http.put('https://jsonplaceholder.typicode.com/posts/1', data, ( err, response ) => {
+//     if ( err ) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log(response);
+//     }
+// });
+
+http.delete('https://jsonplaceholder.typicode.com/posts/1', ( err, response ) => {
     if ( err ) {
         console.log(err);
     }
