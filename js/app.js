@@ -29,11 +29,20 @@ const data = {
     body: 'Cusom post Body'
 };
 
-http.post('https://jsonplaceholder.typicode.com/posts', data, ( err, response) => {
+// http.post('https://jsonplaceholder.typicode.com/posts', data, ( err, response) => {
+//     if ( err ) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log(response);
+//     }
+// });
+
+http.put('https://jsonplaceholder.typicode.com/posts/1', data, ( err, response ) => {
     if ( err ) {
         console.log(err);
     }
     else {
         console.log(response);
     }
-})
+});
