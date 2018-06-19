@@ -22,14 +22,24 @@ class EasyHTTP {
         .catch(err => err);
     }
     
-    //
-    put ( url, data) {
+    // PUT
+    put( url, data ) {
         return fetch(url, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(data => data)
+        .catch(err => err);
+    }
+
+    // DELETE
+    delete( url ) {
+        return fetch(url, {
+            method: 'DELETE',
         })
         .then(res => res.json())
         .then(data => data)
