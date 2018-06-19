@@ -16,14 +16,10 @@ http.post('https://jsonplaceholder.typicode.com/posts', data)
     .then(res => console.log(res))
     .catch(err => console.log(err));
 
-// http.put('https://jsonplaceholder.typicode.com/posts/1', data, ( err, response ) => {
-//     if ( err ) {
-//         console.log(err);
-//     }
-//     else {
-//         console.log(response);
-//     }
-// });
+http.put('https://jsonplaceholder.typicode.com/posts/1', data)
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+
 
 // http.delete('https://jsonplaceholder.typicode.com/posts/1', ( err, response ) => {
 //     if ( err ) {
