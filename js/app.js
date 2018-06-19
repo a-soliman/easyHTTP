@@ -21,11 +21,6 @@ http.put('https://jsonplaceholder.typicode.com/posts/1', data)
     .catch(err => console.log(err));
 
 
-// http.delete('https://jsonplaceholder.typicode.com/posts/1', ( err, response ) => {
-//     if ( err ) {
-//         console.log(err);
-//     }
-//     else {
-//         console.log(response);
-//     }
-// });
+http.delete('https://jsonplaceholder.typicode.com/posts/1')
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
